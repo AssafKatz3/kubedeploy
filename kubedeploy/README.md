@@ -81,6 +81,7 @@ Kubernetes: `>=1.20.0-0`
 | healthcheck.probes.livenessProbe | object | `{}` | Define [livenessProbe](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/) |
 | healthcheck.probes.readinessProbe | object | `{}` | Define [readinessProbe](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/) |
 | healthcheck.probes.startupProbe | object | `{}` | Define [startupProbe](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-startup-probes) |
+| hostAliases | list | [] | Define [HostAliases](https://kubernetes.io/docs/tasks/network/customize-hosts-file-for-pods/)  |
 | image | object | see subvalues | Container image settings |
 | image.args | list | `[]` | Define container custom arguments. [Reference](https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/) |
 | image.command | list | `[]` | Define container custom command. [Reference](https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/) |

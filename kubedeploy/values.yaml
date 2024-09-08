@@ -643,6 +643,8 @@ jobspec:
   # -- Define [Automatic Cleanup for Finished Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished/)
   ttlSecondsAfterFinished: "300"
 
+hostAliases: []
+# -- Define entries in /etc/hosts [HostAliases](https://kubernetes.io/docs/tasks/network/customize-hosts-file-for-pods/)
 
 # -- persistency settings
 # @default -- see subvalues
