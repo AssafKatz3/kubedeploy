@@ -27,7 +27,7 @@ spec:
     {{- toYaml .Values.hostAliases | nindent 2 }}
   {{- end }}
   {{- if .Values.initContainers.enabled }}
-initContainers:
+  initContainers:
     {{- range .Values.initContainers.containers }}
     - name: {{ required "Please define valid init container name" .name }}
       image: "{{ required "Please define valid init container repository" .repository }}:{{ .tag | default "latest" }}"
